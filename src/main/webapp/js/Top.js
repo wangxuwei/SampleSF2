@@ -36,7 +36,7 @@
             		var $action = $(e.currentTarget);
             		var service = $action.attr("data-service");
             		app.oauth.authorize(service);
-            		brite.display("Token");
+            		brite.display("Token",null,{service:service});
             	}
             },
 

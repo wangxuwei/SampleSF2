@@ -11,6 +11,8 @@
 		
 		create : function(data, config) {
 			var view = this;
+			view.service = data.service;
+			
 			var $html = app.render("#tmpl-Token");
 				//show a screen to prevent use click other places
 			view.$screen = $("<div class='notTransparentScreen'></div>").appendTo("body");
@@ -41,8 +43,7 @@
 		var view = this;
 		var $e = view.$el;
 		var code = $e.find("input[name='code']").val();
-
-		app.oauth.setToken(code).done(function() {
+		app.oauth.setToken(code,view.service).done(function() {
 			view.close();
 		}); 
 

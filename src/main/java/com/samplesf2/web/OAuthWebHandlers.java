@@ -1,5 +1,6 @@
 package com.samplesf2.web;
 
+import java.util.Date;
 import java.util.Map;
 
 import com.britesnow.snow.web.RequestContext;
@@ -50,6 +51,7 @@ public class OAuthWebHandlers {
             socialdentity.setUser_id(userId);
             socialdentity.setService(service);
         }
+        socialdentity.setTokenDate(new Date());
         socialdentity.setToken(accessToken);
         socialdentityDao.save(socialdentity);
 	}

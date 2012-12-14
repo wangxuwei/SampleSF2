@@ -9,7 +9,7 @@ var app = app || {};
 	app.oauth.setToken = function(code,service){
 		var params = {mehotd:"POST"};
 		params.params = "code="+code;
-		params.service = "SF";
+		params.service = service;
 		return app.getJsonData(contextPath+"/setToken.do",params);
 	}
 })(jQuery);
