@@ -1,0 +1,1 @@
+insert into samplesf.principal(username,password) values('admin','welcome');

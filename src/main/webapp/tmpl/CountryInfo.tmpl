@@ -1,0 +1,22 @@
+<script id="tmpl-CountryInfo" type="text/html">
+	<div class="CountryInfo modal">
+		<div class="CountryInfo-header modal-header">
+			<div class="close btnClose"><i class="icon-remove"></i></div>
+			<h3>{{#if Id}}Update{{else}}Create{{/if}} Country</h3>
+		</div>
+		<div class="CountryInfo-content modal-body">
+			<div class="form-horizontal">
+				<div class="control-group">
+					<div class="control-label">Country name:</div>
+					<div class="controls">
+						<input type='text' name="name" value="{{Name}}" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="CountryInfo-footer modal-footer">
+			<div class="btn btn-primary btnCreate">Save</div>
+			<div class="btn btnClose">Close</div>
+		</div>
+	</div>  
+</script>

@@ -1,0 +1,22 @@
+<script id="tmpl-ContactInfo" type="text/html">
+	<div class="ContactInfo modal">
+		<div class="ContactInfo-header modal-header">
+			<div class="close btnClose"><i class="icon-remove"></i></div>
+			<h3>{{#if Id}}Update{{else}}Create{{/if}} Contact</h3>
+		</div>
+		<div class="ContactInfo-content modal-body">
+			<div class="form-horizontal">
+				<div class="control-group">
+					<div class="control-label">Contact name:</div>
+					<div class="controls">
+						<input type='text' name="name" value="{{Name}}" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ContactInfo-footer modal-footer">
+			<div class="btn btn-primary btnCreate">Save</div>
+			<div class="btn btnClose">Close</div>
+		</div>
+	</div>  
+</script>
